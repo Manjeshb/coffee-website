@@ -1,0 +1,73 @@
+.fullContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("https://img.freepik.com/free-photo/cup-coffee-table-front-street-with-city-lights-background_188544-10293.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.leftHalf {
+    flex: 1;
+}
+
+.rightHalf {
+    flex: 1;
+    background-color: rgba(200, 205, 208, 0.9);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightHalf > div {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 20px);
+}
+
+.rightHalf > div:nth-child(odd) {
+    margin-right: 0;
+}
+
+.rightHalf h1 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color: rgb(2, 22, 74);
+    font-size: 56px;
+}   
+
+.rightHalf h3 {
+    font-size: 64px;
+    margin-bottom: 0px;
+    color: rgb(4, 85, 85);
+}
+
+.rightHalf p {
+    font-size: 32px;
+}
+
+@media (max-width: 769px) {
+    .rightHalf > div {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .rightHalf h1 {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+    .rightHalf h3 {
+        font-size: 28px;
+        margin-bottom: -10px;
+    }
+
+    .rightHalf p {
+        font-size: 16px;
+    }
+}

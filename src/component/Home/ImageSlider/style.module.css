@@ -1,0 +1,128 @@
+
+.fullContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(183, 219, 181);
+  margin-bottom: 0;
+}
+
+.imageStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spanStyle {
+  font-size: 20px;
+  background: none;
+  color: white;
+}
+
+.imageBlock {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px;
+}
+
+.slideContainer {
+  max-width: 50%;
+  width: 100%;
+}
+
+.rightOfSlider {
+  max-width: 50%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: none;
+}
+
+.rightOfSlider h1 {
+  font-size: 2.5rem;
+  font-style: normal;
+  /* color: rgb(2, 57, 7); */
+  text-align: center;
+  margin-bottom: 20px;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.rightOfSlider p {
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #555;
+  text-align: justify;
+  line-height: 1.5;
+  /* font-family: cursive; */
+}
+
+/* .spacedPara{
+  margin-left: 12%;
+} */  
+
+.rightOfSlider {
+  position: relative;
+}
+
+.rightOfSlider .contactButton {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 100%;
+  color: #ffffff;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #012601;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 170px;
+  height: 45px;
+}
+
+.contactButton:hover {
+  background-color: #024e05;
+}
+
+
+@media screen and (max-width: 769px) {
+  .imageBlock {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .slideContainer,
+  .rightOfSlider {
+    max-width: 100%;
+  }
+
+  .fullContainer {
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .rightOfSlider .contactButton {
+    display: block;
+    width: 100%;
+    height: 40px;
+    max-width: none;
+    margin-left: 0;
+  }
+}

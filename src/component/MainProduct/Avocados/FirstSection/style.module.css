@@ -1,0 +1,106 @@
+
+  
+  .fullContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    width: 100%;
+  }
+
+  .FirstContainer img {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px;
+  }
+  
+  .FirstContainer {
+    max-width: 50%;
+    width: 100%;
+  }
+  
+  .rightContainer {
+    max-width: 50%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: none;
+  }
+  
+  .rightContainer h1 {
+    font-size: 2.5rem;
+    font-style: normal;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .rightContainer p {
+    font-size: 1.5rem;
+    font-style: normal;
+    color: #555;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: cursive;
+  }
+  
+  .rightContainer {
+    position: relative;
+  }
+  
+  .contactButton {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    margin: 10% 33.33%;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #3498db;
+    cursor: pointer;
+  }
+  
+  .contactButton:hover {
+    background-color: #1a5d93;
+  }
+  
+  
+  @media screen and (max-width: 769px) {
+    .FirstContainer img {
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    .FirstContainer,
+    .rightContainer {
+      max-width: 100%;
+    }
+    .rightContainer h1{
+      font-size: 28px;
+    }
+    .rightContainer p{
+      font-size: 20px;
+    }
+    .fullContainer {
+      background-size: cover;
+      height: auto;
+      min-height: 100vh;
+    }
+  
+    .contactButton {
+      display: block;
+      width: 100%;
+      max-width: none;
+      margin-left: -20px;
+    }
+  }

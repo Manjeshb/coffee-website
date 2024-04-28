@@ -1,0 +1,69 @@
+.FullContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.form {
+    padding: 20px 30px;
+    background: #e4e6ea;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.FullContainer .form h5 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.form .container {
+    max-width: 100%;
+}
+
+.form .container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .container form input,
+.form .container form textarea {
+    margin: 10px 0;
+    padding: 10px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    color: #0d0d0d;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form .container form textarea {
+    resize: none;
+}
+
+.form .container form button {
+    width: 150px;
+    padding: 10px 0px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: aqua;
+    align-self: flex-start;
+}
+
+.form .container form select {
+    margin: 10px 0;
+    padding: 10px;
+    background: none;
+    border: 1px solid #000;
+    outline: none;
+    color: #0d0d0d;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+

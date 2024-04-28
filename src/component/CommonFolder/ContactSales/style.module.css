@@ -1,0 +1,81 @@
+.fullContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .leftHalf {
+    flex: 1;
+  }
+  
+  .leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 20px; 
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  
+  .rightHalf {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .areYouA {
+    font-size: 40px; 
+    color: rgb(1, 83, 8);
+  }
+  
+  .withSupplier {
+    font-size: 50px;
+    color: rgb(2, 57, 7);
+    font-weight: bold;
+  }
+  
+  .contactButton {
+    padding: 23px 50px;
+    margin-top: -20px;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    background-color: #012601;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .contactButton:hover {
+    background-color: #024e05;
+    color: #fff;
+  }
+
+
+  @media (max-width: 769px) {
+    .leftContent{
+        padding-right: 10px; 
+        margin-left: 30px;
+        margin-top: 10px;
+        align-items: center;
+    }
+    .areYouA {
+        font-size: 24px; 
+      }
+      
+      .withSupplier {
+        font-size: 34px;
+      }
+      .contactButton{
+        margin-top: 10px;
+        align-items: center;
+        margin-left: 40px;
+      }
+  }
+  

@@ -1,0 +1,56 @@
+/* style.module.css */
+
+.whyChooseUs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: 40px 20px; Add padding for spacing */
+  }
+
+.whyChooseUs h1{
+  margin-top: -10px;
+}
+  
+  .sectionTitle {
+    width: 100%;
+    text-align: center; /* Center-align section title */
+    margin-bottom: 40px; /* Add space between title and points */
+  }
+  
+  .point {
+    width: calc(50% - 20px); /* Adjust width as needed */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(183, 219, 181); 
+  }
+  
+  .point h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .point p {
+    margin: 0;
+    font-size: 16px; 
+    line-height: 1.6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .whyChooseUs {
+      justify-content: center; 
+    }
+    
+    .point {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .point {
+      width: calc(100% - 20px); 
+    }
+  }
+  
